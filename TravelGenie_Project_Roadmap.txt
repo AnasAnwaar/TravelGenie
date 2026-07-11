@@ -1,0 +1,96 @@
+TRAVELGENIE PROJECT ROADMAP
+Last updated: 2026-07-11
+Overall status: UI prototype complete; functional product work pending.
+
+HOW TO USE THIS FILE
+[x] Completed
+[-] In progress
+[ ] Pending
+
+PHASE 1 — PRODUCT FOUNDATION
+[x] Complete the mobile UI prototype
+[x] Document product vision and feature requirements (TravelGenie_PRD.md)
+[ ] Confirm MVP scope and supported launch markets
+[ ] Decide application platform: React PWA, React Native, or Flutter
+[ ] Choose cloud provider and create development, staging, and production environments
+
+PHASE 2 — ENGINEERING FOUNDATION
+[ ] Split src/app/App.tsx into screens, feature components, hooks, API services, and shared types
+[ ] Add routing and centralized client state management
+[ ] Add input validation, loading states, error states, and empty states
+[ ] Add environment-variable configuration for client and server
+[ ] Set up linting, formatting, unit tests, end-to-end tests, CI/CD, analytics, and error tracking
+[ ] Create backend API using FastAPI or Node.js
+[ ] Provision PostgreSQL database and Redis cache
+
+PHASE 3 — ACCOUNTS AND USER PREFERENCES
+[ ] Implement email/password signup, login, logout, and password reset
+[ ] Add Google and Apple sign-in
+[ ] Create user profile and preference storage
+[ ] Capture budget, travel style, interests, food needs, accessibility, currency, and language
+[ ] Implement account deletion and data export
+
+PHASE 4 — TRIP MANAGEMENT
+[ ] Create trips using destination, dates, travelers, budget, and preferences
+[ ] Store trips, saved destinations, hotels, flights, and itinerary versions in the database
+[ ] Implement trip edit, duplicate, delete, share, and export actions
+[ ] Replace all static demo data with live API data
+
+PHASE 5 — TRAVEL DATA INTEGRATIONS
+[ ] Choose and integrate a flight data provider
+[ ] Choose and integrate a hotel data provider
+[ ] Integrate maps, places, routes, and geocoding provider
+[ ] Integrate weather provider
+[ ] Integrate event provider
+[ ] Integrate attractions and restaurant provider
+[ ] Integrate travel advisory and safety sources
+[ ] Integrate currency exchange-rate provider
+[ ] Add API key security, rate-limit handling, caching, attribution, and fallback states
+
+PHASE 6 — AI TRAVEL PLANNING
+[ ] Select AI model/provider and set up secure server-side access
+[ ] Build planner/orchestrator service
+[ ] Build flight, hotel, weather, events, attractions, safety, and recommendation data modules
+[ ] Generate structured daily itineraries with costs, timing, travel time, and booking links
+[ ] Support itinerary regeneration and preference changes
+[ ] Persist chat history and itinerary versions
+[ ] Add AI quality checks, safety guardrails, prompt-injection protection, and cost limits
+
+PHASE 7 — CONNECT THE UI
+[ ] Connect plan wizard to backend and AI planner
+[ ] Connect search, filters, and saved-item actions to live data
+[ ] Connect chat UI to AI itinerary assistant
+[ ] Implement functional Save Plan, Edit, Regenerate, Delete, Share, and Export controls
+[ ] Add responsive layouts for actual mobile devices and web
+[ ] Verify accessibility: keyboard navigation, screen readers, contrast, text scaling
+
+PHASE 8 — ALERTS AND TRIP SUPPORT
+[ ] Configure push notifications
+[ ] Add price-drop alerts
+[ ] Add flight, weather, safety, booking, and check-in alerts
+[ ] Add reminders for packing, visa requirements, and travel documents
+
+PHASE 9 — SECURITY, PRIVACY, AND COMPLIANCE
+[ ] Keep all API and AI keys on the backend only
+[ ] Encrypt data in transit and at rest
+[ ] Create privacy policy, terms of service, consent, retention, and deletion policies
+[ ] Review GDPR and applicable regional privacy requirements
+[ ] Review licensing and terms for travel, maps, content, and affiliate providers
+
+PHASE 10 — TESTING AND LAUNCH
+[ ] Test critical user flow: signup -> plan -> generate -> save -> edit -> regenerate
+[ ] Test data accuracy, time zones, currencies, dates, and API-failure cases
+[ ] Run closed beta with real travelers
+[ ] Monitor errors, API costs, AI quality, and user conversion
+[ ] Launch MVP
+
+POST-MVP
+[ ] Group planning
+[ ] Offline itineraries
+[ ] Expense tracking
+[ ] Visa assistant
+[ ] Live flight tracking
+[ ] AI voice concierge
+
+NEXT BEST MILESTONE
+[ ] Build authentication, saved trips, destination search, weather/maps integration, and AI itinerary generation.
