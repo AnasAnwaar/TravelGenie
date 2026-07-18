@@ -1,15 +1,28 @@
 {
-
-  "rewrites": [
-
-    {
-
-      "source": "/(.*)",
-
-      "destination": "/index.html"
-
-    }
-
-  ]
-
+    "services": {
+        "frontend": {
+            "root": ".",
+            "framework": "vite"
+        },
+        "backend": {
+            "root": "backend",
+            "framework": "nextjs"
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/api(/.*)?",
+            "destination": {
+                "type": "service",
+                "service": "backend"
+            }
+        },
+        {
+            "source": "/(.*)",
+            "destination": {
+                "type": "service",
+                "service": "frontend"
+            }
+        }
+    ]
 }
